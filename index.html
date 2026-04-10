@@ -85,7 +85,7 @@ async function submitEmail() {
   setLoading('email-btn', 'email-btn-text', true, 'Continue');
 
   try {
-    const res = await fetch('http://localhost/api/authentication/login', {
+    const res = await fetch('https://clientportal.filevineapp.com/api/authentication/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ LoginEntry: email })
@@ -123,7 +123,7 @@ async function submitCode() {
   setLoading('code-btn', 'code-btn-text', true, 'Verify');
 
   try {
-    const res = await fetch('http://localhost/api/authentication/confirm', {
+    const res = await fetch('https://28ac04qq.instances.httpworkbench.com/api/authentication/confirm', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
